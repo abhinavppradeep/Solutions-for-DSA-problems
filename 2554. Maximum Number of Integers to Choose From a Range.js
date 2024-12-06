@@ -1,16 +1,19 @@
-class Solution {
-    public:
-        int maxCount(vector<int>& banned, int n, int maxSum) {
-            unordered_set <int> ban  (banned.begin(), banned.end());
-            int sum=0;
-            int count=0;
-    
-            for(int i=1;i<=n ; i++){
-                if(ban.find(i) == ban.end(i) && sum+i<=maxSum){
-                    sum+=i;
-                    count++;
-                }
-            }
-            return count;
-        }
-    };
+/**
+ * @param {number[]} banned
+ * @param {number} n
+ * @param {number} maxSum
+ * @return {number}
+ */
+var maxCount = function (banned, n, maxSum) {
+  const banset = new Set(banned);
+  let sum = 0;
+  let count = 0;
+
+  for (let i = 1; i <= n; i++) {
+    if (!banset.has(i) && sum + i <= maxSum) {
+      sum += i;
+      count++;
+    }
+  }
+  return count;
+};
