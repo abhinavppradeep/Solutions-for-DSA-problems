@@ -21,6 +21,6 @@ public:
             ans.push_back(specialCount == 0);
         }
 
-        return ans; // Return the result
+        return ans; 
     }
 };
