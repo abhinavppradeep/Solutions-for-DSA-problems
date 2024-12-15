@@ -13,4 +13,4 @@ public:
         result+=s.substr(prev);
         return result;
     }
-};
+}; //substr
