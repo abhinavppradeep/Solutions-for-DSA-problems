@@ -13,7 +13,7 @@ int bsfloor(int arr[], int x, int start, int end) {
             start = mid + 1;
         }
     }
-    return floor;
+    return floor;//hh
 }
 
 int bsceil(int arr[], int x, int start, int end) {
